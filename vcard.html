@@ -24,9 +24,9 @@
     } */
 
     .container{
-      text-align:center;
-      mt-5;
       box-shadow: 3px -8px 30px 3px  white;
+      max-width: 600px;
+
     }
     header{
       background-color : black;
@@ -45,45 +45,42 @@
       font-size: 2em;
     }
 
-    .reseaux{
+    .reseaux a{
       color:blue;
+      padding-right: 2em;
     }
-    .reseaux:hover{
-      color:pink;
+    .reseaux a:hover{
+      color:#00FA9A;
       transition: 0.5s;
     }
 
-    hr{
-      width: 50%;
-    }
-
     </style>
-
   </head>
+
   <body>
 
     <header class="text-white pt-5">
-      <div class="container mt-5  text-white border: 2px solid pink;">   <!--permet le centrage de la div -->
+      <div class="container mt-5 text-center ">   <!--permet le centrage de la div -->
 
         <img src="img/bob.jpeg" alt="logo flash lumineux">
 
         <div class = "my-3">
           <p><strong>Jessica Fiedler</strong></p>
-          <p class="text-sm">Développeuse Web & Web Responsive <br>
+          <p class="text-sm">Développeuse Web & Web Responsive <br/>
           <em>En recherche de stage du 30 juin au 14 Aout 2020</em></p>
         </div>
 
          <div class="row">
             <div class="col border-right">
               <a class="btn btn-dark  py-3 w-100 text-white" href="tel:0637470516">
-                <span class="fas fa-phone-alt"> </span></br>
+                <span class="fas fa-phone-alt"> </span><br/>
                 <span class="text-sm text-uppercase"> appeler</span>
               </a>
           </div>
 
           <div class="col border-left">
               <a class="btn btn-dark py-3 w-100 text-white" href="mailto:jess.fiedler83860@gmail.com">
-                <span class="fas fa-paper-plane"> </span> <br>
+                <span class="fas fa-paper-plane"> </span> <br/>
                 <span class="text-sm text-uppercase">e-mail</span>
               </a>
           </div>
@@ -96,7 +93,7 @@
             <div class="col-4 text-right">
                 <span class="fa fa-info-circle"> </span>
             </div>
-            <div class="col-5">
+            <div class="col-8 text-left">
                 Développeuse Web & Responsive
              </div>
         </div>
@@ -108,8 +105,9 @@
             <div class="col-4 text-right">
                 <span class="fas fa-phone-alt"> </span>
             </div>
-            <div class="col-5">
+            <div class="col-8 text-left">
                 <a href="tel:0637470516"> 0637470516</a>
+                <p class="text-sm"> mobile</p>
              </div>
         </div>
         <hr class="w-50">
@@ -119,8 +117,9 @@
             <div class="col-4 text-right">
                 <span class="fas fa-paper-plane"></span>
             </div>
-            <div class="col-5">
+            <div class="col-8 text-left">
                 <a href="mailto:jess.fiedler83860@gmail.com">jess.fiedler83860@gmail.com</a>
+                <p class="text-sm"> email</p>
              </div>
         </div>
         <hr class="w-50">
@@ -130,7 +129,7 @@
             <div class="col-4 text-right">
                 <span class="fa fa-briefcase"> </span>
             </div>
-            <div class="col-5">
+            <div class="col-8 text-left">
                 <p>En formation Développeur Web & Responsive</p>
                 <p class="text-sm"> GRETA Aix-En-Provence</p>
              </div>
@@ -142,7 +141,7 @@
             <div class="col-4 text-right">
                 <span class="fa fa-map-marker"> </span>
             </div>
-            <div class="col-5">
+            <div class="col-8 text-left">
                 Rognac
              </div>
         </div>
@@ -153,7 +152,7 @@
             <div class="col-4 text-right">
                 <span class="fa fa-globe"> </span>
             </div>
-            <div class="col-5">
+            <div class="col-8 text-left">
                 Site
              </div>
         </div>
@@ -164,30 +163,49 @@
             <div class="col-4 text-right">
                 <span class="fa fa-share-alt"> </span>
             </div>
-            <div class="col-5">
+            <div class="col-8 text-left">
                 Réseaux sociaux
              </div>
         </div>
 
         <!-- ----------------------------------------------- -->
-        <div class="row">
-            <div class="col-12 text-center">
-                <a class="btn  w-20 text-lg reseaux" target=_blank href="https://www.linkedin.com/in/jessica-fiedler/"><span class="fab fa-linkedin"></span>
-                <a class="btn  w-20 text-lg reseaux" target=_blank  href="https://www.viadeo.com/p/0021bavjpw97a79b/edit"><span class="fab fa-viadeo"></span>
+        <!-- RESEAUX SOCIAUX -->
+
+        <div class="row reseaux">
+            <div class="col text-center">
+                <a class="mx-1 text-lg" href="https://www.facebook.com/jessica.fiedler.921">
+                  <span class="fab fa-facebook"></span>
+                </a>
+                <a class="mx-1  text-lg" target=_blank href="https://www.linkedin.com/in/jessica-fiedler/">
+                  <span class="fab fa-linkedin"> </span>
+                </a>
+                <a class="mx-1  text-lg" target=_blank  href="https://www.viadeo.com/p/0021bavjpw97a79b/edit">
+                  <span class="fab fa-viadeo"></span>
+                </a>
             </div>
         </div>
         <hr class="w-50">
 
-          </div>
+        <!-- ----Boutons de partage & dl ------------ -->
+        <div class="text-center">
+        <div class="btn btn-primary mb-4 w-75 text-center">
+          <a>
+            <span class="fa fa-user-plus mx-3"> </span>
+            <span class="text-uppercase">télécharger la vcard </span>
+          </a>
+        </div>
 
-
+        <div class="btn btn-dark mb-4 w-75 text-center">
+          <a>
+            <span class="fa fa-share-alt mx-3"> </span>
+            <span class="text-uppercase">partager cette page </span>
+          </a>
+        </div>
         </div>
 
 
 
 
-
-       <!-- RESEAUX SOCIAUX -->
     </main>
 
 
