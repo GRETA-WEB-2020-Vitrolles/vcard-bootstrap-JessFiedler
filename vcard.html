@@ -19,14 +19,14 @@
 
     <style>
 
-    div{
+     /*div{
       border: 2px solid pink;
-    }
+    } */
 
     .container{
       text-align:center;
       mt-5;
-      box-shadow: 3px 3px 12px  white;
+      box-shadow: 3px -8px 30px 3px  white;
     }
     header{
       background-color : black;
@@ -35,10 +35,26 @@
     img{
       margin-top: 10px;
       border-radius: 110px;
-
     }
+
     .text-sm{
       font-size: 0.75em;
+    }
+
+    .text-lg{
+      font-size: 2em;
+    }
+
+    .reseaux{
+      color:blue;
+    }
+    .reseaux:hover{
+      color:pink;
+      transition: 0.5s;
+    }
+
+    hr{
+      width: 50%;
     }
 
     </style>
@@ -47,7 +63,7 @@
   <body>
 
     <header class="text-white pt-5">
-      <div class="container mt-5  text-white">   <!--permet le centrage de la div -->
+      <div class="container mt-5  text-white border: 2px solid pink;">   <!--permet le centrage de la div -->
 
         <img src="img/bob.jpeg" alt="logo flash lumineux">
 
@@ -57,23 +73,126 @@
           <em>En recherche de stage du 30 juin au 14 Aout 2020</em></p>
         </div>
 
-        <div class="row">
-            <div class="col border-left">
+         <div class="row">
+            <div class="col border-right">
               <a class="btn btn-dark  py-3 w-100 text-white" href="tel:0637470516">
-                <span class="fas fa-phone-alt"> </span> <br>
+                <span class="fas fa-phone-alt"> </span></br>
                 <span class="text-sm text-uppercase"> appeler</span>
               </a>
+          </div>
 
-            </div>
-            <div class="col border-right">
-              <a class="btn btn-dark  py-3 w-100 text-white" href="mailto:jess.fiedler83860@gmail.com">
+          <div class="col border-left">
+              <a class="btn btn-dark py-3 w-100 text-white" href="mailto:jess.fiedler83860@gmail.com">
                 <span class="fas fa-paper-plane"> </span> <br>
                 <span class="text-sm text-uppercase">e-mail</span>
               </a>
-            </div>
-         </div>
-
+          </div>
+      </div>
     </header>
+
+    <main class="container mt-5 ">
+
+        <div class="row">
+            <div class="col-4 text-right">
+                <span class="fa fa-info-circle"> </span>
+            </div>
+            <div class="col-5">
+                Développeuse Web & Responsive
+             </div>
+        </div>
+        <hr class="w-50">
+
+        <!-- ----------------------------------------------- -->
+
+        <div class="row">
+            <div class="col-4 text-right">
+                <span class="fas fa-phone-alt"> </span>
+            </div>
+            <div class="col-5">
+                <a href="tel:0637470516"> 0637470516</a>
+             </div>
+        </div>
+        <hr class="w-50">
+        <!-- ----------------------------------------------- -->
+
+        <div class="row">
+            <div class="col-4 text-right">
+                <span class="fas fa-paper-plane"></span>
+            </div>
+            <div class="col-5">
+                <a href="mailto:jess.fiedler83860@gmail.com">jess.fiedler83860@gmail.com</a>
+             </div>
+        </div>
+        <hr class="w-50">
+        <!-- ----------------------------------------------- -->
+
+        <div class="row">
+            <div class="col-4 text-right">
+                <span class="fa fa-briefcase"> </span>
+            </div>
+            <div class="col-5">
+                <p>En formation Développeur Web & Responsive</p>
+                <p class="text-sm"> GRETA Aix-En-Provence</p>
+             </div>
+        </div>
+        <hr class="w-50">
+        <!-- ----------------------------------------------- -->
+
+        <div class="row">
+            <div class="col-4 text-right">
+                <span class="fa fa-map-marker"> </span>
+            </div>
+            <div class="col-5">
+                Rognac
+             </div>
+        </div>
+        <hr class="w-50">
+        <!-- ----------------------------------------------- -->
+
+        <div class="row">
+            <div class="col-4 text-right">
+                <span class="fa fa-globe"> </span>
+            </div>
+            <div class="col-5">
+                Site
+             </div>
+        </div>
+        <hr class="w-50">
+        <!-- ----------------------------------------------- -->
+
+        <div class="row">
+            <div class="col-4 text-right">
+                <span class="fa fa-share-alt"> </span>
+            </div>
+            <div class="col-5">
+                Réseaux sociaux
+             </div>
+        </div>
+
+        <!-- ----------------------------------------------- -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class="btn  w-20 text-lg reseaux" target=_blank href="https://www.linkedin.com/in/jessica-fiedler/"><span class="fab fa-linkedin"></span>
+                <a class="btn  w-20 text-lg reseaux" target=_blank  href="https://www.viadeo.com/p/0021bavjpw97a79b/edit"><span class="fab fa-viadeo"></span>
+            </div>
+        </div>
+        <hr class="w-50">
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+       <!-- RESEAUX SOCIAUX -->
+    </main>
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
