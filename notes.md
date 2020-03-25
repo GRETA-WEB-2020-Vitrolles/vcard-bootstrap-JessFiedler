@@ -6,3 +6,6 @@ img{ margin-top: 10px; }      pourrait être remplacer par du "mt-x" sur l'élé
 <div class="my-3"> (plus lisible)
 
 OK V1
+
+
+Et les /css ils sont où ?
